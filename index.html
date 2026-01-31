@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Anthony Engineering LLP builds research-driven technologies and practical engineering solutions. wagendoc is a brand under Anthony Engineering LLP delivering car maintenance and repair services in Mumbai." />
+  <title>Anthony Engineering LLP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Anthony Engineering LLP home">
+        <img class="brand__logo" src="assets/logo.png" alt="Anthony Engineering LLP logo" />
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#whatwedo">What we do</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn--small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="pill">Mumbai • Startup India recognised • DPIIT Certified (DPIIT979201)</p>
+          <h1>Engineering solutions that bridge technology and social impact.</h1>
+          <p class="lead">
+            Anthony Engineering LLP designs, develops, and deploys research-driven technologies and practical engineering solutions
+            built for real-world constraints.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="#whatwedo">Explore what we do</a>
+          </div>
+
+          <div class="meta">
+            <div class="meta__item">
+              <span class="meta__k">Email</span>
+              <a class="meta__v" href="mailto:support@anthony.engineering">support@anthony.engineering</a>
+            </div>
+            <div class="meta__item">
+              <span class="meta__k">Service area</span>
+              <span class="meta__v">Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hero__card">
+          <h2 class="h3">wagendoc</h2>
+          <p class="muted">A brand by Anthony Engineering LLP</p>
+          <p>
+            Car maintenance and repair services with an emphasis on quality, transparency, and convenience.
+          </p>
+          <ul class="list">
+            <li>Preventive maintenance & periodic service</li>
+            <li>Diagnostics and repair coordination</li>
+            <li>Clear updates and documentation</li>
+          </ul>
+          <a class="link" href="#contact">Contact wagendoc →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section id="whatwedo" class="section">
+      <div class="container">
+        <h2>What we do</h2>
+        <p class="section__sub">
+          We work across two verticals: innovation & technology development, and automotive service delivery via wagendoc.
+        </p>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Innovation & Product Development</h3>
+            <p class="muted">
+              Research-led design and development of technologies, prototypes, and deployable solutions.
+            </p>
+            <ul class="list">
+              <li>User/field insights → engineering requirements</li>
+              <li>Prototyping, iteration, validation</li>
+              <li>Deployment support & documentation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Applied Social-Impact Technology</h3>
+            <p class="muted">
+              Building technology that responds to real-world social and infrastructural challenges.
+            </p>
+            <ul class="list">
+              <li>Human-centered problem framing</li>
+              <li>Usability, accessibility, systems thinking</li>
+              <li>Solutions aligned to societal needs</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>wagendoc (Automotive Services)</h3>
+            <p class="muted">
+              Reliable maintenance and repair services designed around customer experience and transparency.
+            </p>
+            <ul class="list">
+              <li>Periodic service & checks</li>
+              <li>Repairs, parts coordination</li>
+              <li>Service updates and records</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--alt">
+      <div class="container about">
+        <div>
+          <h2>About</h2>
+          <p>
+            Anthony Engineering LLP is an innovation-focused LLP dedicated to building products and technologies that respond to
+            real-world challenges. We operate at the intersection of engineering and research-driven insights, translating complex
+            problems into practical, deployable solutions.
+          </p>
+          <p>
+            Recognised under Startup India and DPIIT certified (DPIIT979201), Ministry of Commerce & Industry, Government of India.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Our approach</h3>
+          <ol class="steps">
+            <li><strong>Understand</strong> the real-world context and constraints</li>
+            <li><strong>Design</strong> solutions that meet technical + societal needs</li>
+            <li><strong>Build</strong> with iteration, testing, and documentation</li>
+            <li><strong>Deploy</strong> with clarity, reliability, and support</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p class="section__sub">
+            Tell us what you’re looking for — innovation/product development or wagendoc services in Mumbai.
+          </p>
+
+          <div class="contact__cards">
+            <div class="card">
+              <h3>Email</h3>
+              <p><a href="mailto:support@anthony.engineering">support@anthony.engineering</a></p>
+            </div>
+            <div class="card">
+              <h3>Service area</h3>
+              <p>Mumbai</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Netlify-ready form (works once deployed on Netlify) -->
+        <form class="card form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            Interested in
+            <select name="interest" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Innovation / Product Development</option>
+              <option>wagendoc (Car maintenance & repair)</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send</button>
+          <p class="muted small">This form will work automatically when hosted on Netlify.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Anthony Engineering LLP. All rights reserved.</p>
+      <p class="muted">wagendoc is a brand under Anthony Engineering LLP.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
