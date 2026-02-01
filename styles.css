@@ -412,3 +412,92 @@ h2{
   .form-row{ grid-template-columns: 1fr; }
   .footer__grid{ grid-template-columns: 1fr; }
 }
+/* ===== Mobile Fix Pack ===== */
+@media (max-width: 520px){
+
+  /* Header / Nav */
+  .nav{
+    padding: 12px 0;
+    gap: 10px;
+  }
+  .nav__links{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .nav__links a{
+    padding: 9px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  .brand__text{
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  /* Hero */
+  .hero{
+    padding: 48px 0 26px;
+  }
+  h1{
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+  .lead{
+    font-size: 16px;
+  }
+  .chips{
+    gap: 8px;
+  }
+  .chip{
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  /* Make buttons comfortable on mobile */
+  .btn{
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__cta .btn{
+    width: 100%;
+  }
+
+  /* Make the hero panel not feel cramped */
+  .panel{
+    min-height: auto;
+  }
+  .panel__content{
+    padding: 18px;
+  }
+
+  /* Sections */
+  .section{
+    padding: 54px 0;
+  }
+  h2{
+    font-size: 26px;
+    letter-spacing: -0.02em;
+  }
+
+  /* Cards spacing */
+  .card{
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  /* About newsletter input stack */
+  .newsletter .inline-form{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .inline-form input{
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer{
+    padding: 40px 0 18px;
+  }
+}
