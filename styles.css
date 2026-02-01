@@ -592,3 +592,31 @@ body.menu-open{
   /* Slightly smaller brand */
   .brand__text{ font-size:16px; }
 }
+
+/* ===== Force Hamburger on Mobile ===== */
+@media (max-width: 720px){
+  .nav{ position: relative; }
+
+  .nav__links--desktop{ display:none !important; }
+  .nav__toggle{ display:flex !important; }
+
+  .nav__toggle{
+    width:44px;
+    height:44px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.06);
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    padding:0;
+  }
+
+  .nav__toggle span{
+    display:block;
+    width:18px;
+    height:2px;
+    background: rgba(246,246,248,.90);
+    border-radius:2px;
+  }
+}
