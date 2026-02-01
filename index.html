@@ -20,16 +20,29 @@
   <!-- Navbar (glass) -->
   <header class="site-header" id="siteHeader">
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__text">anthony<span class="brand__dot">.</span><span class="brand__tld">engineering</span></span>
-      </a>
+  <a class="brand" href="#top" aria-label="Home">
+    <span class="brand__text">anthony<span class="brand__dot">.</span><span class="brand__tld">engineering</span></span>
+  </a>
 
-      <nav class="nav__links" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn btn--small">Contact</a>
-      </nav>
-    </div>
+  <!-- Desktop nav -->
+  <nav class="nav__links nav__links--desktop" aria-label="Primary navigation">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="btn btn--small">Contact</a>
+  </nav>
+
+  <!-- Mobile hamburger button -->
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Mobile dropdown -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#services" class="mobile-nav__link">Services</a>
+    <a href="#about" class="mobile-nav__link">About</a>
+    <a href="#contact" class="mobile-nav__link mobile-nav__cta">Contact</a>
+  </nav>
+</div>
   </header>
 
   <main id="main">
