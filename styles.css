@@ -141,26 +141,32 @@ a:hover{ opacity: .92; }
   border-color: rgba(255,255,255,.12);
 }
 
-/* Hamburger (hidden on desktop) */
+/* Hamburger button */
 .nav__toggle{
-  display:none;
-  width:44px;
-  height:44px;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,.14);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
   background: rgba(255,255,255,.06);
-  box-shadow: 0 14px 60px rgba(0,0,0,.35);
-  align-items:center;
-  justify-content:center;
-  gap:5px;
-  padding:0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
 }
+
+/* Hamburger lines */
 .nav__toggle span{
-  display:block;
-  width:18px;
-  height:2px;
-  background: rgba(246,246,248,.86);
-  border-radius:2px;
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: rgba(246,246,248,.92);
+  border-radius: 2px;
+}
+
+/* Show hamburger only on mobile */
+@media (max-width: 720px){
+  .nav__toggle{ display: flex; }
 }
 
 /* Hero */
